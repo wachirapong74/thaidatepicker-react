@@ -19,7 +19,7 @@ const App = () => {
   return (
     <div className={styles.paddingDocument}>
       <h2>Example ThaiDatePicker by <a href="https://github.com/buildingwatsize">buildingwatsize</a></h2>
-      <div><code>Try it yourself!</code></div>
+      <div><code>[Lando] Try it yourself!</code></div>
       <WatDatePicker
         value={selectedDate}
         onChange={handleWatDatePickerChange}

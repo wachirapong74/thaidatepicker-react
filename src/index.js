@@ -4,7 +4,8 @@ import { Input } from 'antd'
 import LeftOutlined from '@ant-design/icons/LeftOutlined'
 import RightOutlined from '@ant-design/icons/RightOutlined'
 
-import 'react-datepicker/dist/react-datepicker.css'
+// import 'react-datepicker/dist/react-datepicker.css'
+import './react-datepicker.css'
 import './styles.module.css'
 
 import dayjs from 'dayjs'
@@ -51,6 +52,9 @@ export const WatDatePicker = (props) => {
   const [value, setValue] = useState(
     props.value ? props.value : dayjs().format('YYYY-MM-DD')
   )
+
+  console.log('test', value)
+
   const [selectedDate, setSelectedDate] = useState(new Date(value))
   const thisYear = dayjs().year()
   const years = range(thisYear - 50, thisYear + 50, 1)
